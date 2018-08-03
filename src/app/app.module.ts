@@ -12,6 +12,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { TweetListComponent } from './components/tweet-list/tweet-list.component';
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 import { TweetComponent } from './components/tweet/tweet.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TweetComponent } from './components/tweet/tweet.component';
     ProfileComponent,
     TweetListComponent,
     SuggestionsComponent,
-    TweetComponent
+    TweetComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
