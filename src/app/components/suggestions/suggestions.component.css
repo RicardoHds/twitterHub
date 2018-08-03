@@ -1,0 +1,40 @@
+.Whotofollow{
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.roundedimg{
+    width: 48px;
+    height: 48px;
+    left:0;
+}
+
+.imgmail{
+
+    width: 25px;
+    height: 25px;
+    left:0;
+
+}
+
+.elipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.fontsugerencia{
+    font-size: 12px;
+}
+
+.cancel{
+    font-size: 12px;
+}
+
+.blue{
+    color:rgb(0, 195, 255)
+}
+
+.borderbutton{
+    border-radius: 25px;
+}
