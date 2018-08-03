@@ -13,6 +13,7 @@ import { TweetListComponent } from './components/tweet-list/tweet-list.component
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 import { TweetComponent } from './components/tweet/tweet.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { TweetPipe } from './pipes/tweet.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ModalComponent } from './components/modal/modal.component';
     TweetListComponent,
     SuggestionsComponent,
     TweetComponent,
-    ModalComponent
+    ModalComponent,
+    TweetPipe
   ],
   imports: [
     BrowserModule,

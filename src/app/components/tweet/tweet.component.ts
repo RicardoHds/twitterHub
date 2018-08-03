@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TweetsService } from '../../services/tweets.service';
+
 @Component({
   selector: 'app-tweet',
   templateUrl: './tweet.component.html',
@@ -12,7 +13,12 @@ export class TweetComponent implements OnInit {
   ngOnInit() {
   }
   postTweet() {
-    this.tweetsService.postTwits(this.tweet);
+    if (!this.tweet || /^\s*$/.test(this.tweet)) {
+      return false;
+    } else {
+      this.tweetsService.postTwits(this.tweet);
+      this.tweet = '';
+    }
   }
 
 }

@@ -4,7 +4,7 @@
       <app-tweet></app-tweet>
     </div>
   </div>
-  <div class="row border contenedor" *ngFor="let tweet of getTweets()">
+  <div class="row border contenedor" *ngFor="let tweet of getTweets() | tweet">
     <div class="col-md-1 col-ms-1 col-1 mt-2">
       <img class="avatar " src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/2162_Eyebrows-For-Square-Face-Shape_shutterstock_148055564.jpg" alt="Avatar">
     </div>
@@ -30,7 +30,7 @@
           </div >
         </div>
         <div class="row">
-          <div class="col contenido ">
+          <div class="col contenido" style="word-wrap: break-word">
             {{tweet.tweet}}
           </div>
         </div>
@@ -51,7 +51,7 @@
       </div>
     </div>
   </div>
-  <div class="row border contenedor mt-4" style = "height: 60px" >
+  <div class="row border contenedor mt-4" style="height: 60px" >
       <i class="fab fa-twitter m-auto"></i>
   </div>
 </div>
