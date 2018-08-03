@@ -1,0 +1,53 @@
+.tendenciasColor{
+    color: rgb(29, 161, 241)
+}
+
+.foot_tendeciasColor{
+     color: rgb(101, 119, 134)
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+
+.ProfileCard-name {
+    font-size: 14px;
+}
+
+/* Clase que le da estilo al circulo que esta detras de la camara para cambiar foto de perfil */
+.div_circle{
+    border-radius: 50%;
+    background-color: rgb(29, 161, 242);
+    height: 72px;
+    width: 72px;
+    margin-top: -37px;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+/* Clase que le da estilo a la camara */
+.fa-camera{
+top: 16px;
+position: relative;
+left:18px;
+}
+
+.divProfileCard{
+    position: relative;
+    top: -33px;
+    left: 85px;
+}
+
+
+.divTweetsFollows{
+    top:-37px;
+}
+
+.icon-border {
+    font-size: 30px;
+    color:rgb(29, 161, 242);
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}

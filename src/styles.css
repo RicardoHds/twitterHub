@@ -2,3 +2,25 @@
 body{
     background-color: #e6ecf0 !important;
  }
+
+.blue-primary{
+    background-color: #367EC3;
+    border-color: transparent;
+}
+
+.center-v{
+    margin-top: auto; 
+    margin-bottom: auto
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 600px !important;
+    margin: 1.75rem auto;
+}
+}
+
+.radio-25{
+    border-radius: 25px !important;
+}
+
