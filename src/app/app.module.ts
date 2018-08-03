@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { TweetsService } from './services/tweets.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,9 +26,10 @@ import { TweetComponent } from './components/tweet/tweet.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [TweetsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
