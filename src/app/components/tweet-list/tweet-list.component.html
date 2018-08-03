@@ -1,12 +1,54 @@
-<div class="container bg-dark">
+<div class="container ">
   <div class="row">
     <div class="col">
       <app-tweet></app-tweet>
     </div>
   </div>
-  <div class="row">
-    <div class="col">Tweet List
-        <i class="fab fa-accessible-icon"></i>
+  <div class="row border contenedor" *ngFor="let tweet of getTweets()">
+    <div class="col-md-1 col-ms-1 col-1 mt-2">
+      <img class="avatar " src="https://i.pinimg.com/originals/47/1a/1a/471a1ad342659289433e05a611d206f8.png" alt="Avatar">
+    </div>
+    <div class="col-md-11 col-ms-11 col-11 mt-1">
+      <div class="pl-2 pr-2">
+        <div class="row">
+          <div class="col">
+            <a href="" class="nombreCompleto hoverAmarillo mr-1">{{tweet.name}}</a>
+            <span class="alias mr-1">{{tweet.alias}}</span>
+            <small class="alias">{{tiempo(tweet.dateTime)}}</small>
+            <span ngbDropdown class="d-inline-block float-right">
+                <i role="button" id="dropdownBasic1" ngbDropdownToggle class=" fas fa-angle-down mt-auto mb-auto hoverAmarillo"></i>
+                <div class="l11" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button class="p-1 pr-2 pl-2  seleccion l11 dropdown-item">Share via Direct Message</button>
+                  <button class="p-1 pr-2 pl-2  seleccion l11 dropdown-item">Copy link to Tweet</button>
+                  <button class="p-1 pr-2 pl-2  seleccion l11 dropdown-item">Embed Tweet</button>
+                  <button class="p-1 pr-2 pl-2  seleccion l11 dropdown-item">Pin to your profile page</button>
+                  <button class="p-1 pr-2 pl-2  seleccion l11 dropdown-item">Delete Tweet</button>
+                  <hr class="mt-1 mb-1">
+                  <button class="p-1 pr-2 pl-2 seleccion l11 dropdown-item">Add to new Moment</button>
+                </div>
+              </span>
+          </div >
+        </div>
+        <div class="row">
+          <div class="col contenido ">
+            {{tweet.tweet}}
+          </div>
+        </div>
+        <div class="row mt-1  mb-1">
+          <div class="col-4 col-sm-2 col-md-2 coment">
+              <i class="far fa-comment mr-2"></i>
+            <span class="">2</span>
+          </div>
+          <div class="col-4 col-sm-2 col-md-2 reetweet">
+              <i class="fas fa-retweet mr-2"></i>
+            <span class="">12</span>
+          </div>
+          <div class="col-4 col-sm-2 col-md-2 like  ">
+            <i class="far fa-heart mr-2"></i>
+            <span class="">112</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

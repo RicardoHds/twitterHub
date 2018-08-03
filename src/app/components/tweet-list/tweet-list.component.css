@@ -1,0 +1,55 @@
+.dropdown-toggle:empty::after {
+    margin-left: 0;
+    display: none;
+}
+.avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.nombreCompleto{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.hoverAmarillo:hover{
+    color: #FAB81E;
+    cursor: pointer;
+}
+.alias{
+    font-size: 14px;
+    color: #657786;
+}
+.contenedor{
+    background-color: white;
+}
+.contenedor:hover{
+    background-color:#f5f8fa;
+    cursor: pointer;
+}
+.contenido
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.reetweet:hover{
+    cursor: pointer;
+    color: green;
+}
+.coment:hover{
+    cursor: pointer;
+    color:rgb(45, 118, 179);
+}
+.like:hover{
+    cursor: pointer;
+    color:rgb(202, 25, 63);
+}
+.l11{
+    font-size: 13px;
+}
+.seleccion:hover{
+color: white;
+background-color: #FAB81E;
+}
